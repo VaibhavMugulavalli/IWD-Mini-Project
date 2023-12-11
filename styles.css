@@ -1,0 +1,156 @@
+body {
+    font-family: 'Afacad', sans-serif;
+     margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #fff;
+}
+
+header {
+    background-color: #211f20;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+#maintext{
+    padding-left: 720px;
+    font-size: 44px;
+}
+header img {
+    width: 120px;
+    margin-right: 50px;
+    position: absolute;
+    padding-left: 600px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #f1243c;
+}
+
+section {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+form {
+    display: grid;
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #fff;
+}
+
+input[type="file"],
+select,
+input[type="color"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #666;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #f1243c;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #f1243c;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+#services {
+    text-align: center;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service {
+    flex: 1;
+    max-width: 500px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    text-align: left;
+    color: #fff;
+}
+
+span{
+color: #f1243c;
+}
+
+p{
+    font-size: 25px;
+}
+
+li{
+    font-size: 25px;
+}
+h2{
+    font-size: 30px;
+}
+
+#name,#email,#meeting-date,#meeting-time{
+    background-color: #444;
+}

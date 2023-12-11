@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@1,600&display=swap" rel="stylesheet">
+    <title>PrecisionForgeLabs - Order</title>
+</head>
+<body>
+
+    <header>
+        <h1 id="maintext">Precision<span>Forge</span>Labs</h1>
+        <img src="./assets/spanner_logo.jpg" alt="Company Logo">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="order.html">Place an Order</a></li>
+            <li><a href="design_services.html">Design Services</a></li>
+            <li><a href="./consultation.html">Consultation</a></li>
+            <!-- Added link to the Design Services page -->
+
+        </ul>
+    </nav>
+
+    <section id="order-form">
+        <span><h2>Place Your Order</h2></span>
+        <form action="process_order.php" method="post">
+
+            <div class="form-group">
+                <label for="file">Upload File (.stl, .obj, .stp, .step, .igs, .iges):</label>
+                <input type="file" id="file" name="file" accept=".stl, .obj, .stp, .step, .igs, .iges" required>
+            </div>
+
+            <div class="form-group">
+                <label for="material">Select Material:</label>
+                <select id="material" name="material" required>
+                    <option value="PLA">PLA</option>
+                    <option value="ABS">ABS</option>
+                    <option value="PETG">PETG</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="color">Select Color:</label>
+                <select id="color" name="color" required>
+                    <option value="black">Black</option>
+                    <option value="white" selected>White</option>
+                    <option value="red">Red</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="green">Green</option>
+                    <option value="blue">Blue</option>
+                    <option value="purple">Purple</option>
+                    <option value="orange">Orange</option>
+                    <option value="gold">Gold</option>
+                    <option value="clear">Clear</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="infill">Infill Percentage:</label>
+                <select id="infill" name="infill" required>
+                    <option value="0">0%</option>
+                    <option value="10">10%</option>
+                    <option value="20">20%</option>
+                    <option value="30">30%</option>
+                    <option value="40">40%</option>
+                    <option value="50">50%</option>
+                    <option value="60">60%</option>
+                    <option value="70">70%</option>
+                    <option value="80">80%</option>
+                    <option value="90">90%</option>
+                    <option value="100">100%</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="layer-height">Layer Height:</label>
+                <select id="layer-height" name="layer-height" required>
+                    <option value="0.12">0.12 mm</option>
+                    <option value="0.16">0.16 mm</option>
+                    <option value="0.2" selected>0.2 mm</option>
+                    <option value="0.28">0.28 mm</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+            </div>
+
+            <div class="form-group">
+                <label for="shipping">Shipping Method:</label>
+                <select id="shipping" name="shipping" required>
+                    <option value="standard">Standard Shipping(30 &#8377;-60 &#8377;)</option>
+                    <option value="express">Express Shipping(200 &#8377;)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Submit Order">
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 PrecisionForgeLabs. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
